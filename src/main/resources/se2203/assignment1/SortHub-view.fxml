@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="se2203.assignment1.SortingHubController">
+   <children>
+      <AnchorPane fx:id="displayBox" layoutX="14.0" layoutY="14.0" prefHeight="325.0" prefWidth="562.0" style="-fx-border-color: black;" />
+      <Slider fx:id="timeDelaySlider" layoutX="635.0" layoutY="51.0" majorTickUnit="200.0" max="1000.0" minorTickCount="1" onMouseDragged="#changeTimeDelay" orientation="VERTICAL" prefHeight="192.0" prefWidth="14.0" showTickLabels="true" showTickMarks="true" />
+      <Label layoutX="606.0" layoutY="14.0" text="Time Delay" />
+      <Label fx:id="timeDelayLabel" layoutX="622.0" layoutY="32.0" />
+      <Button fx:id="shuffleButton" layoutX="616.0" layoutY="260.0" mnemonicParsing="false" onAction="#shuffleArr" prefHeight="25.0" prefWidth="58.0" text="Shuffle" />
+      <Button fx:id="reverseButton" layoutX="617.0" layoutY="299.0" mnemonicParsing="false" onAction="#reverseArr" text="Reverse" />
+      <Button fx:id="sortButton" layoutX="569.0" layoutY="351.0" mnemonicParsing="false" onAction="#sortVals" prefHeight="35.0" prefWidth="107.0" text="Sort" />
+      <Label fx:id="arraySizeLabel" layoutX="491.0" layoutY="351.0" prefHeight="17.0" prefWidth="30.0" />
+      <Slider fx:id="arraySizeSlider" blockIncrement="0.0" layoutX="262.0" layoutY="350.0" majorTickUnit="16.0" max="128.0" min="32.0" minorTickCount="0" onMouseDragged="#changeArraySize" prefHeight="14.0" prefWidth="150.0" showTickLabels="true" showTickMarks="true" translateX="50.0" />
+      <Label layoutX="617.0" layoutY="166.0" prefHeight="17.0" prefWidth="119.0" rotate="90.0" text="Milliseconds" />
+      <Label layoutX="197.0" layoutY="351.0" text="Array Size" translateX="50.0" />
+      <ComboBox fx:id="algorithmComboBox" layoutX="85.0" layoutY="347.0" onAction="#changeSortingMethod" onMouseDragged="#changeTimeDelay" prefHeight="25.0" prefWidth="150.0" />
+      <Label layoutX="14.0" layoutY="351.0" text="Algorithm" />
+   </children>
+</AnchorPane>
